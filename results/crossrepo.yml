@@ -1,0 +1,57 @@
+files:
+  # TOGA genome-wide walk: 19,457 hg38 genes x 130 primate species (most-severe status across assemblies)
+  toga_primates_species.toga_long.parquet: TOGA tidy long table (gene, chrom, species, status, assembly, raw_id) for all genes x all primate assemblies
+  toga_primates_species.intersections.parquet: TOGA one row per gene x species with chrom, most-severe status and all per-assembly statuses
+  toga_primates_species.status_matrix.parquet: TOGA gene x species matrix of status codes (I/PI/UL/L/M/PM/PG)
+  toga_primates_species.loss_matrix.parquet: TOGA gene x species 0/1 loss matrix (1 = UL/PG/PM/L/M), UpSet-ready
+  toga_primates_species.status_matrix.tsv: TOGA gene x species status-code matrix (TSV copy of the parquet)
+  toga_primates_species.loss_matrix.tsv: TOGA gene x species 0/1 loss matrix (TSV copy of the parquet)
+
+  # TOGA chrX cut: 843 X-linked genes x 130 species
+  toga_primates_species_chrX.intersections.tsv: TOGA chrX genes, one row per gene x species with most-severe status
+  toga_primates_species_chrX.status_matrix.tsv: TOGA chrX gene x species status-code matrix
+  toga_primates_species_chrX.loss_matrix.tsv: TOGA chrX gene x species 0/1 loss matrix
+
+  # Mao et al. 2024 (Cell) fixed-SV gene disruptions in 8 non-human primates
+  mao2024/gene_disrupted.intersections.tsv: Mao 2024 SV-disrupted genes (all biotypes), one row per gene x lineage
+  mao2024/gene_disrupted.matrix.tsv: Mao 2024 SV-disrupted genes x 8 NHP lineages, 0/1 presence matrix
+  mao2024/gene_disrupted_chrX.intersections.tsv: Mao 2024 SV-disrupted chrX genes, one row per gene x lineage
+  mao2024/gene_disrupted_chrX.matrix.tsv: Mao 2024 SV-disrupted chrX genes x 8 NHP lineages, 0/1 presence matrix
+  mao2024/recurrent_disrupted.intersections.tsv: Mao 2024 recurrently disrupted genes (139), one row per gene x lineage
+  mao2024/recurrent_disrupted.matrix.tsv: Mao 2024 recurrently disrupted genes x 8 NHP lineages, 0/1 presence matrix
+
+  # Yoo et al. 2025 (Nature) lineage-specific novel genes in apes (gains, not LoF; query-assembly coords)
+  yoo2025/lineage_specific.intersections.tsv: Yoo 2025 lineage-specific novel ape genes, one row per gene x lineage
+  yoo2025/lineage_specific.matrix.tsv: Yoo 2025 lineage-specific novel genes x 9 ape lineages, 0/1 presence matrix
+
+  # Human gene LoF from 1000 Genomes long-read SVs (polymorphic, not fixed)
+  human_1kgp_sv/lof.intersections.tsv: Human 1KGP long-read SV gene LoF, one row per gene x LoF tier/superpopulation
+  human_1kgp_sv/lof.status_matrix.tsv: Human 1KGP SV gene x LoF tier/superpopulation matrix of HC_LOF/LC_LOF status
+  human_1kgp_sv/lof.loss_matrix.tsv: Human 1KGP SV gene x LoF tier/superpopulation 0/1 matrix (1 = high-confidence LoF)
+
+  # Cross-source merge (TOGA + Mao + human)
+  merged/loss_matrix.tsv: Unified gene x lineage 0/1 loss matrix with source-prefixed columns (toga:, mao:, human:)
+  merged/loss_matrix.coverage.tsv: Tested-mask for the merged matrix, separating tested-not-lost from not-in-source
+
+  # Curated cut: recombination / meiosis genes (95 genes resolved in TOGA)
+  recombination_genes/toga.intersections.tsv: Recombination genes, TOGA gene x species statuses (default loss set)
+  recombination_genes/toga.status_matrix.tsv: Recombination genes x species TOGA status-code matrix
+  recombination_genes/toga.loss_matrix.tsv: Recombination genes x species 0/1 loss matrix (default loss set UL/PG/PM/L/M)
+  recombination_genes/toga_strictL.intersections.tsv: Recombination genes, TOGA gene x species statuses (strict loss, L only)
+  recombination_genes/toga_strictL.status_matrix.tsv: Recombination genes x species TOGA status-code matrix (strict-L run)
+  recombination_genes/toga_strictL.loss_matrix.tsv: Recombination genes x species 0/1 loss matrix, strict loss (L only), recommended
+  recombination_genes/toga_chrX.intersections.tsv: X-linked recombination genes, TOGA gene x species statuses (default loss set)
+  recombination_genes/toga_chrX.status_matrix.tsv: X-linked recombination genes x species TOGA status-code matrix
+  recombination_genes/toga_chrX.loss_matrix.tsv: X-linked recombination genes x species 0/1 loss matrix (default loss set)
+  recombination_genes/toga_chrX_strictL.intersections.tsv: X-linked recombination genes, TOGA gene x species statuses (strict L)
+  recombination_genes/toga_chrX_strictL.status_matrix.tsv: X-linked recombination genes x species TOGA status-code matrix (strict-L run)
+  recombination_genes/toga_chrX_strictL.loss_matrix.tsv: X-linked recombination genes x species 0/1 loss matrix (strict L)
+  recombination_genes/mao.intersections.tsv: Recombination genes disrupted by fixed SVs in Mao 2024, one row per gene x lineage
+  recombination_genes/mao.matrix.tsv: Recombination genes x 8 NHP lineages, Mao 2024 0/1 SV-disruption matrix
+  recombination_genes/mao_chrX.intersections.tsv: X-linked recombination genes disrupted in Mao 2024 (none found)
+  recombination_genes/mao_chrX.matrix.tsv: X-linked recombination genes x NHP lineages, Mao 2024 0/1 matrix (empty)
+  recombination_genes/human.intersections.tsv: Recombination genes with human 1KGP SV LoF, one row per gene x tier/superpopulation
+  recombination_genes/human.status_matrix.tsv: Recombination genes x human LoF tier/superpopulation status matrix
+  recombination_genes/human.loss_matrix.tsv: Recombination genes x human LoF tier/superpopulation 0/1 matrix (HC LoF)
+  recombination_genes/merged.loss_matrix.tsv: Recombination genes unified 0/1 loss matrix (toga strict-L + mao + human)
+  recombination_genes/merged.loss_matrix.coverage.tsv: Tested-mask for the recombination-gene merged matrix
