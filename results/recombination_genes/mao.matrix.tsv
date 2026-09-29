@@ -1,0 +1,7 @@
+gene	chrom	gene_id	gene_type	Gibbon	Gorilla	Macaque_indian	Marmoset	Owl_monkey
+HELLS	10	ENSG00000119969	protein_coding	0	0	1	0	1
+MLH1	3	ENSG00000076242	protein_coding	0	0	0	1	1
+RAD51	15	ENSG00000051180	protein_coding	0	0	0	1	0
+RAD51D	17	ENSG00000185379	protein_coding	0	1	0	0	0
+SPIDR	8	ENSG00000164808	protein_coding	1	0	0	0	0
+ZCWPW2	3	ENSG00000206559	protein_coding	0	0	0	1	1

@@ -1,0 +1,152 @@
+=== TOGA genome-wide walk ===========================================
+  python      : /home/kmt/xy-drive/people/kmt/primate-prot-var/long-read-lof/../.pixi/envs/default/bin/python
+  query genes : data/all_toga_genes.txt
+  toga tree   : genome.senckenberg.de/download/TOGA/human_hg38_reference/Primates
+  annotation  : data/hg38_toga_genes.tsv  (cols: id,gene,chrom)
+  toga-label  : species
+  out prefix  : results/toga_primates_species
+  extra args  : 
+  started     : 2026-06-14 17:19:06
+=====================================================================
+query genes:            103654
+lineages found:         130
+genes in data:          19457
+intersection (genes):   19457
+per-lineage hits / losses:
+    ALLENOPITHECUS_NIGROVIRIDIS  hits=19457 loss=1120
+    ALLOCHROCEBUS_LHOESTI        hits=19457 loss=549
+    ALOUATTA_PALLIATA            hits=19457 loss=1561
+    AOTUS_NANCYMAAE              hits=19457 loss=2339
+    AOTUS_VOCIFERANS             hits=19457 loss=1016
+    ATELES_BELZEBUTH             hits=18612 loss=1694
+    ATELES_CHAMEK                hits=18614 loss=1676
+    ATELES_GEOFFROYI             hits=19457 loss=1505
+    ATELES_MARGINATUS            hits=18617 loss=1701
+    ATELES_PANISCUS              hits=19457 loss=1726
+    CACAJAO_AYRESI               hits=18859 loss=1496
+    CACAJAO_CALVUS               hits=18796 loss=1470
+    CACAJAO_HOSOMI               hits=18811 loss=1539
+    CACAJAO_MELANOCEPHALUS       hits=17064 loss=1415
+    CALLIMICO_GOELDII            hits=19456 loss=1620
+    CALLITHRIX_JACCHUS           hits=19457 loss=1444
+    CALLITHRIX_PENICILLATA       hits=19427 loss=3435
+    CALLITHRIX_PYGMAEA           hits=19457 loss=1515
+    CARLITO_SYRICHTA             hits=19457 loss=2631
+    CEBUS_ALBIFRONS              hits=19457 loss=3479
+    CEBUS_CAPUCINUS_IMITATOR     hits=19457 loss=1276
+    CEPHALOPACHUS_BANCANUS       hits=19450 loss=2682
+    CERCOCEBUS_ATYS              hits=19457 loss=1487
+    CERCOPITHECUS_ALBOGULARIS    hits=19457 loss=2266
+    CERCOPITHECUS_MONA           hits=19457 loss=1071
+    CERCOPITHECUS_NEGLECTUS      hits=19457 loss=2215
+    CHEIROGALEUS_MEDIUS          hits=19457 loss=2640
+    CHERACEBUS_LUCIFER           hits=18418 loss=2072
+    CHERACEBUS_LUGENS            hits=18676 loss=2551
+    CHERACEBUS_REGULUS           hits=18675 loss=2589
+    CHERACEBUS_TORQUATUS         hits=18508 loss=2031
+    CHIROPOTES_ISRAELITA         hits=17394 loss=1957
+    CHIROPOTES_SAGULATUS         hits=18549 loss=1676
+    CHLOROCEBUS_AETHIOPS         hits=19457 loss=1601
+    CHLOROCEBUS_SABAEUS          hits=19457 loss=998
+    COLOBUS_ANGOLENSIS_PALLIATUS hits=19457 loss=1698
+    COLOBUS_GUEREZA              hits=19457 loss=2708
+    DAUBENTONIA_MADAGASCARIENSIS hits=19457 loss=1991
+    ERYTHROCEBUS_PATAS           hits=19457 loss=3123
+    EULEMUR_FLAVIFRONS           hits=19457 loss=1887
+    EULEMUR_FULVUS               hits=19457 loss=2259
+    EULEMUR_FULVUS_COLLARIS      hits=19457 loss=1817
+    EULEMUR_MACACO               hits=19457 loss=1949
+    EULEMUR_MONGOZ               hits=19457 loss=1988
+    GALAGO_MOHOLI                hits=19457 loss=2770
+    GALAGO_SENEGALENSIS          hits=17433 loss=2333
+    GORILLA_BERINGEI             hits=18574 loss=1236
+    GORILLA_GORILLA              hits=19457 loss=380
+    GORILLA_GORILLA_GORILLA      hits=19457 loss=997
+    HOOLOCK_LEUCONEDYS           hits=19457 loss=5206
+    HYLOBATES_AGILIS             hits=19397 loss=1625
+    HYLOBATES_MOLOCH             hits=19457 loss=930
+    HYLOBATES_PILEATUS           hits=19456 loss=1127
+    INDRI_INDRI                  hits=19457 loss=2303
+    LAGOTHRIX_LAGOTRICHA         hits=18464 loss=1600
+    LEMUR_CATTA                  hits=19457 loss=1955
+    LEONTOPITHECUS_CHRYSOMELAS   hits=19436 loss=1592
+    LEONTOPITHECUS_ROSALIA       hits=19445 loss=1531
+    LOPHOCEBUS_ATERRIMUS         hits=19457 loss=2029
+    LORIS_TARDIGRADUS            hits=19457 loss=2479
+    MACACA_ARCTOIDES             hits=19457 loss=902
+    MACACA_ASSAMENSIS            hits=19457 loss=2617
+    MACACA_CYCLOPIS              hits=19457 loss=649
+    MACACA_FASCICULARIS          hits=19457 loss=3487
+    MACACA_FUSCATA               hits=19457 loss=893
+    MACACA_LEONINA               hits=19457 loss=553
+    MACACA_MULATTA               hits=19457 loss=700
+    MACACA_NEMESTRINA            hits=19457 loss=1464
+    MACACA_NIGRA                 hits=19457 loss=3901
+    MACACA_SILENUS               hits=19457 loss=786
+    MACACA_THIBETANA_THIBETANA   hits=19457 loss=739
+    MANDRILLUS_LEUCOPHAEUS       hits=19457 loss=1855
+    MANDRILLUS_SPHINX            hits=19457 loss=4246
+    MICROCEBUS_GRISEORUFUS       hits=17938 loss=2662
+    MICROCEBUS_MITTERMEIERI      hits=18205 loss=2870
+    MICROCEBUS_MURINUS           hits=19457 loss=1881
+    MICROCEBUS_RAVELOBENSIS      hits=17255 loss=2134
+    MICROCEBUS_SP._3_GT-2019     hits=19457 loss=2129
+    MICROCEBUS_TAVARATRA         hits=19457 loss=2293
+    MIRZA_COQUERELI              hits=19457 loss=1644
+    MIRZA_ZAZA                   hits=19457 loss=1709
+    NASALIS_LARVATUS             hits=19457 loss=6632
+    NOMASCUS_LEUCOGENYS          hits=19457 loss=723
+    NYCTICEBUS_BENGALENSIS       hits=19457 loss=5694
+    NYCTICEBUS_COUCANG           hits=19457 loss=2296
+    OTOLEMUR_CRASSICAUDATUS      hits=19457 loss=1636
+    OTOLEMUR_GARNETTII           hits=19457 loss=1554
+    PAN_PANISCUS                 hits=19457 loss=557
+    PAN_TROGLODYTES              hits=19457 loss=515
+    PAPIO_ANUBIS                 hits=19457 loss=1368
+    PAPIO_HAMADRYAS              hits=19457 loss=2279
+    PAPIO_PAPIO                  hits=19397 loss=1416
+    PILIOCOLOBUS_TEPHROSCELES    hits=19457 loss=1029
+    PITHECIA_MITTERMEIERI        hits=18510 loss=1751
+    PITHECIA_PITHECIA            hits=19457 loss=6953
+    PITHECIA_VANZOLINII          hits=18124 loss=1720
+    PLECTUROCEBUS_BERNHARDI      hits=18478 loss=2124
+    PLECTUROCEBUS_BRUNNEUS       hits=18522 loss=2103
+    PLECTUROCEBUS_CALIGATUS      hits=18532 loss=2098
+    PLECTUROCEBUS_CINERASCENS    hits=18486 loss=2124
+    PLECTUROCEBUS_CUPREUS        hits=19457 loss=1330
+    PLECTUROCEBUS_DONACOPHILUS   hits=19457 loss=2092
+    PLECTUROCEBUS_DUBIUS         hits=16457 loss=1930
+    PLECTUROCEBUS_GROVESI        hits=18610 loss=2030
+    PLECTUROCEBUS_HOFFMANNSI     hits=18476 loss=2136
+    PLECTUROCEBUS_MILTONI        hits=18512 loss=2094
+    PLECTUROCEBUS_MOLOCH         hits=18685 loss=1983
+    PONGO_ABELII                 hits=19457 loss=857
+    PONGO_PYGMAEUS               hits=19457 loss=2167
+    PROLEMUR_SIMUS               hits=19457 loss=1334
+    PROPITHECUS_COQUERELI        hits=19457 loss=1940
+    PYGATHRIX_NEMAEUS            hits=19457 loss=1299
+    PYGATHRIX_NIGRIPES           hits=19457 loss=5410
+    RHINOPITHECUS_BIETI          hits=19457 loss=3622
+    RHINOPITHECUS_ROXELLANA      hits=19457 loss=963
+    RHINOPITHECUS_STRYKERI       hits=19457 loss=4149
+    SAGUINUS_IMPERATOR           hits=19457 loss=1564
+    SAGUINUS_MIDAS               hits=19453 loss=2619
+    SAGUINUS_OEDIPUS             hits=19457 loss=1028
+    SAIMIRI_BOLIVIENSIS          hits=19457 loss=1830
+    SAIMIRI_BOLIVIENSIS_BOLIVIENSIS hits=19457 loss=2354
+    SAIMIRI_SCIUREUS             hits=15912 loss=2209
+    SAPAJUS_APELLA               hits=19457 loss=2957
+    SEMNOPITHECUS_ENTELLUS       hits=19457 loss=1888
+    SYMPHALANGUS_SYNDACTYLUS     hits=19457 loss=1741
+    THEROPITHECUS_GELADA         hits=19457 loss=905
+    TRACHYPITHECUS_FRANCOISI     hits=19457 loss=1489
+    TRACHYPITHECUS_GERMAINI      hits=19457 loss=787
+    TRACHYPITHECUS_PHAYREI_CREPUSCULA hits=19457 loss=5619
+    VARECIA_VARIEGATA            hits=19397 loss=2003
+
+wrote: results/toga_primates_species.toga_long.parquet/
+       results/toga_primates_species.intersections.parquet/
+       results/toga_primates_species.status_matrix.parquet/
+       results/toga_primates_species.loss_matrix.parquet/
+=====================================================================
+  done in 18m 52s  ->  results/toga_primates_species.*.parquet/

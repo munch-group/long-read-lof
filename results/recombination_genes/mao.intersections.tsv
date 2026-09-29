@@ -1,0 +1,10 @@
+query_gene	chrom	gene_id	gene_type	lineage
+HELLS	10	ENSG00000119969	protein_coding	Macaque_indian
+HELLS	10	ENSG00000119969	protein_coding	Owl_monkey
+MLH1	3	ENSG00000076242	protein_coding	Marmoset
+MLH1	3	ENSG00000076242	protein_coding	Owl_monkey
+RAD51	15	ENSG00000051180	protein_coding	Marmoset
+RAD51D	17	ENSG00000185379	protein_coding	Gorilla
+SPIDR	8	ENSG00000164808	protein_coding	Gibbon
+ZCWPW2	3	ENSG00000206559	protein_coding	Marmoset
+ZCWPW2	3	ENSG00000206559	protein_coding	Owl_monkey

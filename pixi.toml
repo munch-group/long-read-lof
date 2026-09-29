@@ -1,0 +1,18 @@
+[workspace]
+name = "long-read-lof"
+channels = ["conda-forge", "bioconda", "munch-group"]
+platforms = ["linux-64"]
+
+[dependencies]
+python = ">=3.10"
+pandas = "*"
+openpyxl = "*"
+pyarrow = "*"
+pd-lfs = ">=0.1.33,<0.2"
+# notebooks/exploration.ipynb
+numpy = "*"
+matplotlib = "*"
+seaborn = "*"
+geneinfo = ">=5.6.37,<6"
+vscodenb = "*"
+notebook = "*"

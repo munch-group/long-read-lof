@@ -1,0 +1,17 @@
+# downloads / large inputs (recipes in README.md and CLAUDE.md)
+genome.senckenberg.de/
+*.zip
+data/1kg_ont/
+data/yoo2025/
+data/hg38_cds_intervals.tsv.gz
+tmp/
+
+# environment / caches
+.pixi/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# large TSVs, Parquet versions are tracked instead
+results/toga_primates_species.toga_long.tsv
+results/toga_primates_species.intersections.tsv

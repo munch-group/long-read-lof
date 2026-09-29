@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "group_cols": null,
+  "dtypes": {
+    "query_gene": "string",
+    "chrom": "string",
+    "lineage": "string",
+    "status": "string",
+    "all_statuses": "string"
+  },
+  "files": [
+    {
+      "path": "part-00000.parquet",
+      "partition": {},
+      "size": 1356899,
+      "num_rows": 2490753
+    }
+  ]
+}
